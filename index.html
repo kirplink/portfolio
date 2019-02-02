@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="index.js"></script>
+</head>
+<body>
+    <div id="about">
+        <div id="about-content" class="text-light">
+            <h1 class="roboto">Hello! I'm Daniel,</h1>
+            <h3 class="roboto-con">a web developer with a love of creating beautiful code.</h3>
+            <br>
+            <h4 class="roboto-con">Let me help you bing your vision to reality.</h4>
+            <br>
+            <a href="https://github.com/kirplink" target=”_blank”><i class="fab fa-github-square fa-3x text-light"></i></a>
+            <a href="https://www.linkedin.com/in/daniel-s-reynolds/" target=”_blank”><i class="fab fa-linkedin fa-3x text-light"></i></a>
+            <a href="mailto: danielsreynolds@ymail.com"><i class="fas fa-envelope-square fa-3x text-light"></i></a>
+        </div>
+        <div id="about-nav">
+            <a href="#portfolio"><i class="fas fa-angle-down fa-3x stretch text-light"></i></a>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="port-nav tc"><a href="#about"><i class="fas fa-angle-up fa-3x stretch text-light"></i></a></div>
+        <div class="port-content">
+            
+            <div class="portfolio-item port-item-1 color-dark">
+                <div class="port-title-img">
+                    <div class="port-title roboto">
+                        <a href="http://desolate-stream-29104.herokuapp.com/" target=”_blank”><h2 class="text-color-dark">Build-A-PC</h2></a>
+                    </div>
+                    <div class="port-img">
+                        <img src="./img/buildapc.PNG" alt="build a pc site image">
+                    </div>
+                </div>
+                
+                <div class="port-text">
+                    <ul class="text-light text-default roboto-con">
+                        <li>App that helps users find a PC to meet their budget</li>
+                        <li>Backed with ExpressJS</li>
+                        <li>MySQL database with Squelize NPM package</li>
+                        <li>Passport.js used for user authentication</li>
+                        <li>Front-end done with HandlebarsJS</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="port-item-2 color-light"></div>
+            <div class="port-item-3 color-light"></div>
+            <div class="port-item-4 color-dark"></div>
+        </div>
+    </div>
+</body>
+</html>

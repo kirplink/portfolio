@@ -1,0 +1,187 @@
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 3em;
+  line-height: 1.05em;
+}
+
+h2 {
+  font-size: 2.25em;
+  line-height: 1.25em;
+}
+
+h3 {
+  font-size: 1.75em;
+  line-height: 1.25em;
+}
+
+h4 {
+  font-size: 1.125em;
+  line-height: 1.22222222222em;
+}
+
+p, .text-default {
+  font-size: 1em;
+  line-height: 1.375em;
+}
+
+ul {
+  list-style-type: circle;
+  list-style-position: inside;
+}
+
+li {
+  margin: 1.5em;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.text-light {
+    color: lightgray;
+}
+
+.text-color {
+  color: #f86859;
+}
+
+.text-color-dark {
+  color: #bf362f;
+}
+
+.tc {
+  text-align: center;
+}
+
+.roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.roboto-con {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+  overflow:hidden;
+}
+
+#about {
+  height: 100vh;
+  background-color: #373740;
+  display: grid;
+  grid-template-columns: 4em 1fr 4em;
+  grid-template-rows: 4em 1fr 4em;
+  justify-items: center;
+  align-items: center;
+  grid-template-areas:
+    ".... .... ...."
+    ".... main ...."
+    ".... nav  ...."
+}
+
+#about-nav {
+  grid-area: nav;
+}
+
+#about-content {
+  grid-area: main;
+}
+
+#portfolio {
+  height: 100vh;
+  background-color: #373740;
+  display: grid;
+  grid-template-columns: 4em 1fr 4em;
+  grid-template-rows: 4em 1fr 4em;
+  grid-template-areas:
+    ".. nav .."
+    ".. content .."
+    ".. .. .."
+}
+
+.port-content {
+  grid-area: content;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 1em;
+  grid-template-areas: 
+    "item1 item2"
+    "item3 item4"
+}
+
+.portfolio-item {
+  display: grid;
+  padding: 1em;
+  border-radius: .5em;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "img text"
+}
+
+.port-title-img {
+  grid-area: img;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+}
+
+.port-title {
+  justify-self: center;
+  align-self: center;
+}
+
+.port-text {
+  grid-area: text;
+  justify-self: center;
+  align-self: center;
+  padding: 1em;
+}
+
+.port-nav {
+  grid-area: nav;
+}
+
+.port-item-1 {
+  grid-area: item1;
+}
+
+.port-item-2 {
+  grid-area: item2;
+}
+
+.port-item-3 {
+  grid-area: item3;
+}
+
+.port-item-4 {
+  grid-area: item4;
+}
+
+.color-dark {
+  background-color: #11111a;
+}
+
+.color-light {
+  background-color: #61616b;
+}
+
+.color-test {
+  background-color: orange;
+}
+
+.stretch {
+  display:inline-block;
+  -webkit-transform:scale(2,1); /* Safari and Chrome */
+  -moz-transform:scale(2,1); /* Firefox */
+  -ms-transform:scale(2,1); /* IE 9 */
+  -o-transform:scale(2,1); /* Opera */
+  transform:scale(2,1); /* W3C */
+}
